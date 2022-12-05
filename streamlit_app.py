@@ -9,7 +9,9 @@ from extract_hdf5 import extract_data_from_hdf5
 from spectrogram import plot_spectrograms
 from wave import mywave
 
-st.markdown("# Select your new recording")
+st.markdown("# Looking for Continuous Gravitational Waves?")
+
+st.markdown("## Select your new recording")
 uploaded_file = st.file_uploader("Pick a HDF5 file!", type='hdf5', key="recording1")
 
 if uploaded_file is not None:
