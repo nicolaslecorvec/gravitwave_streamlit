@@ -2,6 +2,6 @@ scipy==1.9.3
 streamlit==1.15.2
 os
 pandas
-matplotlib.pyplot
+matplotlib
 h5py
 numpy
