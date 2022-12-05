@@ -4,8 +4,6 @@ from scipy.signal import istft
 from scipy import signal
 
 
-
-
 def mywave(data_s):
 
     amp1 = data_s['L1_SFTs_amplitudes']
@@ -14,8 +12,6 @@ def mywave(data_s):
     print('Mean of label 1 signal frequency is {}'.format(f_m1))
     _, xrec1 = signal.istft(amp1, f_m1)
     xrec1_r = signal.resample(xrec1, 16707)
-
-
 
     fig = plt.figure(figsize=(20,10))
 
