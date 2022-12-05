@@ -1,7 +1,6 @@
 matplotlib
-#os
-scipy==1.9.3
-streamlit==1.15.2
+scipy
+streamlit
 pandas
 h5py
 numpy
