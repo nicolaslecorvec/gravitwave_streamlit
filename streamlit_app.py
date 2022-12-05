@@ -1,6 +1,6 @@
 import scipy
 import streamlit as st
-import os
+#import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import h5py
@@ -34,9 +34,9 @@ if uploaded_file is not None:
 
 
     st.markdown("## Visual analysis of your data:")
-    st.markdown("### Spectogram analysis")
+    st.markdown("### Spectrogram visualization")
 
     plot_spectrograms(data)
 
-    st.markdown("### Wave analysis")
+    st.markdown("### Frequency visualization")
     mywave(data)
