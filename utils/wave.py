@@ -6,16 +6,16 @@ from scipy import signal
 
 def mywave(data_s):
 
-    amp1 = data_s['L1_SFTs_amplitudes'][0:500]
-    amp2 = data_s['H1_SFTs_amplitudes'][0:500]
-    f1 = data_s['freq'][0:500]
+    amp1 = data_s['L1_SFTs_amplitudes']
+    amp2 = data_s['H1_SFTs_amplitudes']
+    f1 = data_s['freq']
     f_m1 = sum(f1)/len(f1)
     #st.write('Mean of label 1 signal frequency is {}'.format(f_m1))
     _, xrec1 = signal.istft(amp1, f_m1)
-    xrec1_r = signal.resample(xrec1, 16707)
+    xrec1_r = signal.resample(xrec1, 200)
 
     _, xrec2 = signal.istft(amp2, f_m1)
-    xrec2_r = signal.resample(xrec2, 16707)
+    xrec2_r = signal.resample(xrec2, 200)
 
     fig = plt.figure(figsize=(20,10))
 

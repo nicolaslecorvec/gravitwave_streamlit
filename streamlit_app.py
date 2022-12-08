@@ -35,9 +35,8 @@ if uploaded_file is not None:
     data = extract_data_from_hdf5(uploaded_file.name)
 
     st.markdown("## Visual analysis of your data:")
-    st.markdown("### Spectrogram visualization")
-
-    plot_spectrograms(data)
-
     st.markdown("### Frequency visualization")
     mywave(data)
+
+    st.markdown("### Spectrogram visualization")
+    plot_spectrograms(data)
