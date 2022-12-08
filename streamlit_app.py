@@ -1,13 +1,9 @@
-import json
-import time
-from utils.wave import mywave
-import h5py
-import matplotlib.pyplot as plt
 import requests
 import streamlit as st
 
 from extract_hdf5 import extract_data_from_hdf5
 from utils.spectrogram import plot_spectrograms
+from utils.wave import mywave
 
 st.markdown("# Looking for Continuous Gravitational Waves?")
 
